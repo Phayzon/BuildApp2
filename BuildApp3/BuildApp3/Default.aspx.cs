@@ -11,6 +11,20 @@ namespace BuildApp3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                TestFunction();
+            }
+
+        }
+
+        protected void TestFunction()
+        {
+            string TestUser = string.Empty;
+
+
+            TestUser = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+
 
         }
     }
