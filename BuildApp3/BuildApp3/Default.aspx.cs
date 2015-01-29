@@ -21,9 +21,10 @@ namespace BuildApp3
         protected void TestFunction()
         {
             string TestUser = string.Empty;
-
+            string Testuser2 = string.Empty;
 
             TestUser = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+
 
 
         }
