@@ -23,7 +23,7 @@ namespace BuildApp3
             string TestUser = string.Empty;
             string Testuser2 = string.Empty;
 
-            TestUser = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            TestUser = System.Security.Principal.WindowsIdentity.GetCurrent().Name.ToUpper();
 
 
 
